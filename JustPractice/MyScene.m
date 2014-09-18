@@ -19,26 +19,32 @@
 -(id)initWithSize:(CGSize)size {    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
-        
+        self.textureAtlas = [SKTextureAtlas atlasNamed:@"images"];
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    //for (UITouch *touch in touches) {
-        //CGPoint location = [touch locationInNode:self];
-        [self defaultTouch];
-        
-    //}
+    for (UITouch *touch in touches) {
+        CGPoint location = [touch locationInNode:self];
+        [self defaultTouchAtLocation:location];
+    
+    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }
 
--(void)defaultTouch {
-    NSLog(@"Log this");
+-(void)defaultTouchAtLocation:(CGPoint)location {
+    NSLog(@"Log this %f, %f", location.x, location.y);
+    SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithTexture:[self.textureAtlas textureNamed:@"rocket-groot"]
+                                                              size:CGSizeMake(100, 100)];
+    
+    spriteNode.position = location;
+    NSLog(@"Log this %@", spriteNode);
+    [self addChild:spriteNode];
 }
 
 @end
