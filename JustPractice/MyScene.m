@@ -21,7 +21,8 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
+        //CGPoint location = [touch locationInNode:self];
+        [self defaultTouch];
         
     }
 }
@@ -30,6 +31,8 @@
     /* Called before each frame is rendered */
 }
 
-
+-(void)defaultTouch {
+    NSLog(@"Log this");
+}
 
 @end
