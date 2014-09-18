@@ -24,6 +24,7 @@
 		759FBAAF19C9D8B800D838EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBA8719C9D8B800D838EB /* UIKit.framework */; };
 		759FBAB719C9D8B800D838EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 759FBAB519C9D8B800D838EB /* InfoPlist.strings */; };
 		759FBAB919C9D8B800D838EB /* JustPracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 759FBAB819C9D8B800D838EB /* JustPracticeTests.m */; };
+		759FBAD919CB7AE800D838EB /* images.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 759FBAD819CB7AE800D838EB /* images.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		759FBAB419C9D8B800D838EB /* JustPracticeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JustPracticeTests-Info.plist"; sourceTree = "<group>"; };
 		759FBAB619C9D8B800D838EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		759FBAB819C9D8B800D838EB /* JustPracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JustPracticeTests.m; sourceTree = "<group>"; };
+		759FBAD819CB7AE800D838EB /* images.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = images.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		759FBA8B19C9D8B800D838EB /* JustPractice */ = {
 			isa = PBXGroup;
 			children = (
+				759FBAD819CB7AE800D838EB /* images.atlas */,
 				759FBA9419C9D8B800D838EB /* AppDelegate.h */,
 				759FBA9519C9D8B800D838EB /* AppDelegate.m */,
 				759FBA9719C9D8B800D838EB /* Main_iPhone.storyboard */,
@@ -242,6 +245,7 @@
 			files = (
 				759FBAA619C9D8B800D838EB /* Images.xcassets in Resources */,
 				759FBA9C19C9D8B800D838EB /* Main_iPad.storyboard in Resources */,
+				759FBAD919CB7AE800D838EB /* images.atlas in Resources */,
 				759FBA9919C9D8B800D838EB /* Main_iPhone.storyboard in Resources */,
 				759FBA9019C9D8B800D838EB /* InfoPlist.strings in Resources */,
 			);

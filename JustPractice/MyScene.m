@@ -8,6 +8,12 @@
 
 #import "MyScene.h"
 
+@interface MyScene ()
+
+@property (nonatomic, strong) SKTextureAtlas *textureAtlas;
+
+@end
+
 @implementation MyScene
 
 -(id)initWithSize:(CGSize)size {    
@@ -20,11 +26,11 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    for (UITouch *touch in touches) {
+    //for (UITouch *touch in touches) {
         //CGPoint location = [touch locationInNode:self];
         [self defaultTouch];
         
-    }
+    //}
 }
 
 -(void)update:(CFTimeInterval)currentTime {
